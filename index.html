@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    /* Universal
+    *{
+        background-color: #eedec9;
+    } */
+    /* Individual Selectors
+    
+      h1{
+        background-color: #6161e5;
+      }
+      h2{
+        background-color: #cc6e6e;
+      }
+      h3{
+        background-color: rgb(213, 200, 141);
+      }
+      p{
+        color:#ff09e6;
+      }
+    
+    /* class and id selector selectors */
+    /* .paragraph, #paragraph1
+    {
+        border-radius: 2px;
+        border: 2px dotted #e71919;
+        color: #6161e5;
+        padding: 0px 20px 0px 20px;
+        margin: 10px 80px 0px 80px;
+
+    }
+    .heading{
+        text-align: center;
+    }  */
+
+    /* inside element 
+    div li{
+        color:#dc4e16 ;
+        background-color: #000000; 
+    } */
+
+
+
+     /*inside element  */
+    /* div p,h1,li{
+        color:#361508 ;
+        background-color: #cdcaca; 
+     } */
+
+
+    /* child parent */
+    div > ol > li{
+        text-decoration:underline;
+        color: #020202;
+        background-color: #6161e5;
+
+    }
+
+    /* Chained or "and" selector
+    p.chain.p1{
+        color:#5f9ea0;
+    }
+
+    p.chain#p1{
+        color:#dfdd42;
+    } */
+
+
+    /* Sibling ~ or +  */
+        p + h1
+         {
+            background-color: rebeccapurple ;
+        }
+    
+    </style>
+</head>
+<body>
+
+
+    <!-- CSS SElectors are used in this file -->
+
+    <!-- <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis dolore totam neque nesciunt architecto voluptas, adipisci magnam. Doloribus quasi dicta magnam reprehenderit? Exercitationem earum quia odio libero architecto sapiente incidunt accusamus, quo dolores corrupti est! Quo numquam, omnis officiis adipisci quos rem libero eum veniam ex amet placeat neque.</p>
+
+    
+    <h1 class="heading">CSS Selectors </h1>    
+
+     class 
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem odit ratione blanditiis impedit delectus, minus enim veniam, voluptatem sint perspiciatis eos aliquid quod. Ducimus quam aspernatur nostrum impedit quos neque eius maiores magnam alias asperiores facilis pariatur nemo fugit illo repudiandae, minus recusandae facere quas explicabo earum magni. Illo alias a eligendi in, eos, quibusdam, placeat dolores saepe esse et nulla. Explicabo quis ut rem consectetur nostrum voluptatibus, nemo tempora. Consectetur aspernatur recusandae dolorem! Odio impedit, soluta ipsum voluptatum officia nesciunt quae iure quaerat numquam sunt quas rem cumque quis consequatur debitis ea incidunt quam illum repellat rerum deserunt?   </p>
+
+     
+    <p id="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, accusamus. Necessitatibus, perferendis fugiat! Voluptas sequi, totam corporis, ut culpa nihil optio molestiae porro recusandae ullam nam temporibus, blanditiis nisi doloribus deleniti explicabo id quo architecto repudiandae impedit in ipsum ipsam velit quae. Dicta tempora laborum reprehenderit veniam inventore saepe, exercitationem odit facilis eaque, repudiandae beatae. Magnam, nihil doloribus vero reprehenderit saepe excepturi adipisci consequatur dolorem incidunt dicta accusantium possimus quod nam ab, nemo et recusandae? Voluptatem harum iure ratione sequi id repudiandae necessitatibus, vitae odio doloribus iste optio aperiam ipsam vel magnam eum eos perferendis laborum tenetur sit sed pariatur.</p>
+--->
+   <div>
+    <h1 class="heading" >Selector List</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam at, ea consectetur aut deserunt, dolorum commodi quis sequi fugiat eum nesciunt inventore assumenda voluptatum ducimus facere sed numquam nisi amet ex quo quisquam perferendis! Numquam sunt laborum exercitationem nam quidem, deleniti, tempore porro labore odit unde voluptatum autem facilis tenetur! Porro eveniet quam neque? Deserunt ex nisi recusandae facere dolorem quaerat dolore ab temporibus, dolor eligendi? Nihil, beatae deserunt? Itaque quis cum natus eligendi, laboriosam ex sapiente obcaecati illum praesentium ad nisi quod mollitia officiis quia error voluptatibus delectus qui magnam minima? Voluptas laborum hic saepe natus voluptatum nam aut. 
+         <ol>
+                <li>hello</li>
+        </ol>
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facilis aperiam possimus eveniet excepturi labore maxime laborum nostrum magnam quidem fugiat, quod molestias? Error repellat praesentium similique quibusdam possimus eaque!</p>
+    <ol>
+        <li>universal selector </li>
+        <li>individual selector </li>
+        <li>class and id selector </li>
+        <li>and selector (chained) </li>
+        <li>combined selector </li>
+        <li>inside an element </li>
+        <li>direct child </li>
+        <li>sibling  ~ or + </li>
+    </ol>
+   </div> 
+    <!-- <div>
+    <p class = "chain p1" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iure.
+    </p>
+    <p class="chain ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, delectus.
+    </p>
+
+    <p class= "chain" id="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, esse?
+    </p>
+    <h1>hello</h1>
+   
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, delectus.
+    </p>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, delectus.
+    </p>
+
+   
+   </div> -->
+
+
+
+   <div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, earum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, non?
+        </p>
+        <h1>
+            This is Heading
+        </h1>
+        <h1>
+            This is also a heading
+        </h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, vero!
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, vitae?
+        </p>
+   </div>
+</body>
+</html>
