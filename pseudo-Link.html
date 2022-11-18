@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking</title>
+    <style>
+       
+        div{
+            margin:10px;
+            padding:5px;
+            border: 2px solid black;
+            background-color: #c3a5e4;
+            }
+        div a
+        {
+            color:#ffff0a;
+        }
+           
+        /* active */
+        a[class='active']:active{
+            background-color: #eeca9d;
+            color: #61d31b;
+        }
+        /* link */
+        a[class='link']:link{
+        background: linear-gradient(#E1A2B8 ,#9F2BC1) ;  
+        }
+        /* any-link */
+        a[class='any-link']:any-link{
+            background-color: #a9ee9d;
+            color: #ed167e;
+        }
+        /*    visited        */
+        a[class='visited']:visited{
+            background-color: #eeca9d;
+            color: #9304f1;
+        }
+        /* hover */
+        a[class='hover']:hover{
+            background-color: #eeca9d;
+            color: #2b401e;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div> <a href="#" class="active">The styling will come when the link becomes active</a> </div>
+   <div>  <a href="#" class="link">The styling will be done on links only </a></div>
+   <div> <a href="#" class="any-link" >The styling will come when the link becomes active</a></div>
+   <div> <a href="#" class="visited">The styling will come when the link becomes visited</a></div>
+   <div> <a href="#" class="hover" >The styling will come when the user will hover the cursor over that element</a></div>
+     
+   
+</body>
+</html>

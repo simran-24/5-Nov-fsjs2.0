@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-form</title>
+    <style>
+        body{
+              margin: 30px 400px;
+              padding: 10px;
+              background-color: beige;
+            }
+        input,select{
+            margin: 10px;
+        }
+        input:read-only
+        {
+            padding: 5px;
+        }
+         a{
+            padding: 4px;          
+        } 
+    </style>
+</head>
+<body>
+  <h1>Student Information</h1>
+  <form>
+    <label for="name">Full Name : </label>
+    <input type="text"  value="Simran" readonly><br> <!--read-only---> 
+    <label for="id">Enrollment ID : </label>
+    <input type="number" value="20114792" readonly><br> <!--read-only ---> 
+    <label for="email">E-mail : </label>
+    <input type="email" value="simran@gmail.com" readonly><br><!--read-only ---> 
+
+    <label for="course" >Course : </label>
+        Full JS<input type="checkbox" name="Courses" id="" checked readonly > <!--checked &  read-only---> 
+        Data Science<input type="checkbox" name="Courses" id="">
+        Blockchain<input type="checkbox" name="Courses" id="">
+      <br>
+       <label for="Location">Country
+            <select name="Location-country" id="country" disabled> <br>  <!--disabled ---> 
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="China">China</option>
+                <option value="Denmark">Denmark</option>
+                <option value="France">France</option>
+                <option value="Hungary">Hungary</option>
+                <option value="India" selected >India </option>    <!---Selected-->
+                <option value="Ireland">Ireland</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States of America">United States of America</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+        <div>
+            <label for="comments">Comments (optional) :- </label><br>
+            <textarea name="comments" id="" cols="30" rows="3" readonly >Good Experience!!</textarea> <!--read-only ---> 
+        </div>
+        </label><br>
+        
+        
+       <a href="pseudo-form1.html"><input type="button" value="Edit"></a>
+       <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
+  </form>
+</body>
+</html>

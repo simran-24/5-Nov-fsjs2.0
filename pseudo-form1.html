@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 30px 400px;
+    padding: 10px;
+    background-color: beige;
+}
+input,select{
+    margin: 14px;
+   
+}
+/* checked */
+/* input:checked {
+
+    border: none;
+    outline: 4px solid #5c5ce4;
+} */
+/* default */
+input:default{
+    border:none;
+    outline: 2px solid #9df532;
+}
+/* focus */
+input:focus{
+     background-color: antiquewhite;
+     color:blue;
+}
+/* enabled */
+input:enabled{
+    background-color: bisque;
+}
+/* required */
+input:required{
+background-color: #faa060;
+}
+/* optional */
+textarea:optional
+{
+background-color: #ebb9b9;
+}
+/* read-write */
+textarea:read-write
+{
+    color:blueviolet;
+    font-style: italic;
+}
+/* in-range */
+input:in-range
+{
+    background-color: #94eee5;
+}
+/* out-of-range */
+input:out-of-range
+{
+    background-color: #9ba1f0;
+}
+select:disabled{
+    color: #94eee5;
+}
+
+</style>
+
+<body> 
+<div>
+    <a href="http://www.google.com">Web Search</a>
+</div>
+        <form action=" " method="get" style="border: 1px solid black;  padding:10px  ;" >
+        
+        <h1 style="text-align: center;">Survey Form</h1>
+
+        <label for="name">Full Name : </label>
+        <input type="text" placeholder="Fullname"><br> <!--required ---> 
+    
+        <label for="id">Enrollment ID : </label>
+        <input type="number" placeholder="(e.g. 20114792)" required><br> <!--required ---> 
+    
+        <label for="email">E-mail : </label>
+        <input type="email"><br>
+    
+        <label for="course" >Course : </label>
+        
+        Full JS<input type="checkbox" name="Courses" id="" checked > <!--checked ---> 
+        
+        Data Science<input type="checkbox" name="Courses" id="" checked>
+        
+        Blockchain<input type="checkbox" name="Courses" id=""><br>
+    
+    
+      <label for="Location">Country
+            <select name="Location-country" id="country" disabled> <br>  <!--disabled ---> 
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="China">China</option>
+                <option value="Denmark">Denmark</option>
+                <option value="France">France</option>
+                <option value="Hungary">Hungary</option>
+                <option value="India" selected >India </option>    <!---Selected-->
+                <option value="Ireland">Ireland</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States of America">United States of America</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select><br>
+            
+       <label for="duration">Date : </label>
+        <input type="date" name="date" id="" min="2022-01-01" max="2022-12-31">    <!--in-range-->
+        <!--<label for="duration">Date : </label>
+        <input type="date" name="date" id="" min="2022-01-01" max="2022-12-31" value="2023-01-01"> -->     <!---out-of-range-->
+
+        
+        <label for="comments">Comments (optional) :- </label><br>
+        <textarea name="comments" id="" cols="30" rows="3" optional re>You can give your Valuable Feedback here</textarea> <!--optional---> 
+      
+        <br>
+
+        <label for="Rate Us">Rate us </label>
+        <input type="range" name="Rating" id=""><br>
+
+       <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>

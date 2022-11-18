@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-form3</title>
+</head>
+<style>
+    body{
+        margin:20px 400px;
+        
+    }
+    input{
+        margin:10px;
+    }
+    /* invalid */
+    input:invalid{
+        border: 2px solid red;
+    }
+    /* valid */
+    input:valid{
+        background-color: antiquewhite;
+        color:blueviolet;
+    }
+</style>
+<body>
+    <center>
+        <h1>Valid-Invalid Form</h1>
+    <form action="" style="border: 1px solid black;">
+        <label for="name">Full Name : </label>
+        <input type="text" name="name" id="" ><br>
+
+        <label for="name">Age (between 5-18): </label>
+        <input type="number" name="Age" id="" min="5" max="18" ><br>
+
+        <label for="email" >E-mail : </label>
+        <input type="email" name="email" id="" value=" 1234223">
+
+        <button type="submit">Submit</button>
+
+    </form>
+</center>
+</body>
+</html>
