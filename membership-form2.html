@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership-Form2</title>
+</head>
+<body>
+    <div>
+    <h1>Registration Form Using Table Tag</h1>
+
+    <!-- Using table Tag -->
+    <form action="" method="get">
+   <table>
+        <tr>
+            <!-- Name -->
+            <td>
+                 Name<sup>*</sup> : 
+            </td>
+            <!-- <input type="text"> -->
+            <td>
+                <input type="text" name= "Full-Name" placeholder="First" required;> <input type="text"placeholder="Last" required>
+            </td>
+        </tr>    
+
+        <tr>
+             <!-- Contact-->
+            <td>
+                Phone  : 
+            </td>
+            <!-- <input type="tel"> -->
+            <td>
+                <input type="tel" name="Phone-number" id="">
+            </td>
+        </tr>   
+
+        <tr>
+              <!-- Email -->
+           <td>
+              Email<sup>*</sup> :    
+           </td>
+           <!-- <input type="email"> -->
+           <td>
+                <input type="email" name="E-mail" id="" placeholder="abc@gmail.com" required>
+           </td>
+       </tr>    
+
+        <tr>
+            <!-- Address -->
+            <td>
+                Address :    
+            </td>
+            <!-- <input type="text"> -->
+            <td>
+                <input type="text" name="House no." id="" placeholder="House No."> <input type="text" name="Street-name" placeholder="StreetName">
+            </td>
+           
+        </tr>
+          
+        <tr>
+            <td>
+            Country 
+        </td>
+          <td >
+            <select name="Country" id="" placeholder="Country">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="China">China</option>
+                <option value="Denmark">Denmark</option>
+                <option value="France">France</option>
+                <option value="Hungary">Hungary</option>
+                <option value="India">India</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States of America">United States of America</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+             </select>
+          </td>
+        </tr>
+        <tr>
+            <!--  Membership Plans -->
+            <td>
+                Membership Plans<sup>*</sup> : 
+            </td>
+            <!-- <input type="radio"> -->
+            <td>
+                <input type="radio" name="Plans" id="" >Standard ($200/Year) <input type="radio" name="Plans" id="" >Silver ($450/Year) <input type="radio" name="Plans" id="" >Gold ($600/Year)
+            </td>
+        </tr>    
+
+        <tr>
+            <!-- Comments -->
+            <td>
+               Comments : <br>
+            </td>
+            <!-- <textarea> tag-->
+            <td>
+                <textarea name="Comments/Feedback" id="" cols="10" rows=""></textarea>
+            </td>
+        </tr>    
+        <tr>
+            <!-- Terms of Service -->
+            <td>
+                 Terms of Service<sup>*</sup> : <br>
+            </td>
+            <!-- <input type="checkbox">-->
+            <td>
+                <input type="checkbox" name="Terms of Service" id=""> I agree to the terms of service.
+            </td>
+        </tr>    
+        <tr>
+            <!-- Submit Button -->
+            <td>
+               Click to Become a Member : 
+            </td>
+           <!-- <input type="submit button">-->
+            <td>
+                <input type="submit" value="BECOME MEMBER" > 
+            </td>
+        </tr>    
+   </table> 
+</form>
+</body>
+</html>
